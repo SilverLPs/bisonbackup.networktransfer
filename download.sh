@@ -10,7 +10,7 @@ for arg in "$@"; do
       shift
       ;;
     DESTINATION=*)
-      VAR_DESTINATION="$(realpath ${arg#*=})"
+      VAR_DESTINATION="$(realpath "${arg#*=}")"
       shift
       ;;
     USERNAME=*)
